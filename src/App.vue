@@ -1,22 +1,26 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PageComp/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PageComp from './components/PageComp.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PageComp,
   }
 }
 </script>
 
 <style lang="scss">
+html {
+  background-color: violet;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
